@@ -17,6 +17,7 @@ html {
 
 body {
   margin: 0;
+  background-color: lightgoldenrodyellow;
 }
 
 h1 {
@@ -152,7 +153,6 @@ input {
 
 #beer-container figure {
   width: 100%;
-  background-color: green;
   padding: 0;
 }
 
