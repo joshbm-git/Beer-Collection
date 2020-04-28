@@ -2,24 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>My Beer Collection</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
+    <meta name="description" content="My Beer Collection" />
     <meta name="author" content="Joshua Bacurio Mercado" />
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   </head>
 
   <body onhashchange="pageChange()">
-    <main id="app"></main>
+    <!-- tabbar navigation -->
+    <nav class="tabbar">
+      <a href="#home">Home</a><a href="#add">Add Product</a>
+    </nav>
+
+    <!-- pages -->
+    <!-- home page -->
+    <section id="home" class="page">
+      <header class="topbar">
+        <h2>My Beer Collection</h2>
+      </header>
+      <input type="search" placeholder="Search" onkeyup="search(this.value)" />
+
+      <section id="home-container"></section>
+    </section>
+
+    <!-- add page -->
+    <section id="add" class="page">
+      <header class="topbar">
+        <h2>Add New Product</h2>
+      </header>
+      <form>
+        <input id="name" type="text" name="name" placeholder="Name" />
+        <input
+          id="name_breweries"
+          type="text"
+          name="brewery"
+          placeholder="Brewery"
+        />
+        <input id="img" type="text" name="img" placeholder="Image URL" />
+        <button type="button" name="button" onclick="addNewBeer()">Save</button>
+      </form>
+    </section>
+
+    <!-- beer page -->
+    <section id="beer" class="page">
+      <section id="beer-container">
+        <figure>
+          <img
+            src="https://www.carlsberggroup.com/media/26623/xz_carlsberg.png?height=570&mode=max"
+            alt=""
+          />
+        </figure>
+        <article>
+          <h3>Carslberg</h3>
+          <p>
+            At Carlsberg, the pursuit of better beer is in our DNA. More than
+            100 years after our founder J.C. Jacobsen mastered the art of
+            brewing great Pilsner, we're still looking for ways to improve our
+            beer. Our perfectly balanced Danish Pilsner is wonderfully crisp and
+            refreshing, with a full flavour and a distinctive hoppy aroma. Skål!
+          </p>
+
+          <h4>Beer type: European Pale Lager</h4>
+          <h4>ABV: 5%</h4>
+        </article>
+      </section>
+    </section>
+    <!-- SPA functionality  -->
+    <script src="js/spa.js"></script>
     <!-- main js file -->
-    <script src="main.js" type="module"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -2,8 +2,9 @@
 :root {
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
-}
 
+  --background-brown: #2a1c0e;
+}
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
@@ -24,14 +25,9 @@ h1 {
   letter-spacing: 3px;
 }
 
-h3 {
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
 /* ---------- topbar styling ---------- */
 .topbar {
-  background-color: black;
+  background-color: var(--background-brown);
   color: var(--text-color-light);
   padding: 13.5px;
   text-transform: uppercase;
@@ -49,7 +45,7 @@ h3 {
 
 /* ---------- tabbar styling ---------- */
 .tabbar {
-  background-color: black;
+  background-color: var(--background-brown);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -71,14 +67,14 @@ h3 {
 
 /* Change the color of links on hover */
 .tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
+  background-color: white;
+  color: black;
 }
 
 /* Add a color to the active/current link */
 .tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
+  background-color: white;
+  color: black;
 }
 
 /* ---------- page styling ---------- */
@@ -86,50 +82,35 @@ h3 {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
-  background: var(--light-grey);
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
   padding: 55px 0;
 }
 
-/* ---------- styling ---------- */
-/* Grid container */
-.grid-container {
+/* ---------- home styling ---------- */
+#home-container {
   display: grid;
-  grid-template-columns: 100%;
-  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
 }
 
-@media (min-width: 600px) {
-  .grid-container {
-    grid-template-columns: 50% 50%;
-  }
+#home-container a {
+  color: black;
+  text-decoration: none;
 }
 
-@media (min-width: 992px) {
-  .grid-container {
-    grid-template-columns: 33.33% 33.33% 33.33%;
-  }
+#home-container figure {
+  border: solid 1px lightgrey;
+  padding: 1em;
 }
 
-.grid-container > article {
-  text-align: center;
-  padding: 10px;
-}
-
-.grid-container > article img {
-  max-width: 300px;
+#home-container img {
   width: 100%;
-  margin-bottom: 1em;
+  max-height: 500px;
+  object-fit: contain;
 }
 
-iframe {
-  border: none;
-  width: 100%;
-  height: 250px;
-}
-
-/* input form stryling */
+/* ---------- form styling ---------- */
 form {
   margin: auto;
 }
@@ -143,13 +124,12 @@ form button {
   font-size: 1em;
   border-radius: 0;
   color: #ffffff !important;
-  background-color: rgb(38, 76, 89);
+  background-color: var(--text-color-dark);
   width: 100%;
   max-width: 350px;
 }
 
-input,
-select {
+input {
   -webkit-appearance: none;
   margin: 1em auto;
   width: 100%;
@@ -157,7 +137,28 @@ select {
   padding: 15px 15px;
   box-sizing: border-box;
   display: block;
-  background: #fff;
-  border: 0;
-  border-radius: 0;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+/* ---------- custom styling ---------- */
+#beer-container {
+  display: flex;
+
+  width: 50%;
+  margin: 0 auto;
+}
+
+#beer-container figure {
+  width: 100%;
+  background-color: green;
+  padding: 0;
+}
+
+#beer-container article {
+  width: 100%;
+  border: solid 1px lightgrey;
+  padding: 1em;
+  line-height: 1.5em;
 }

@@ -1,17 +1,17 @@
 [
   {
-    "name": "MacBook Pro 13\"",
-    "name_breweries": "Apple",
-    "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp13touch-space-select-201807?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1529520060550"
+    "name": "Carlsberg",
+    "name_breweries": "Carslberg",
+    "img": "https://www.carlsberggroup.com/media/26623/xz_carlsberg.png?height=570&mode=max"
   },
   {
-    "name": "MacBook Pro 13\"",
-    "name_breweries": "Apple",
-    "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp13touch-space-select-201807?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1529520060550"
+    "name": "Ceres Top Pilsner",
+    "name_breweries": "Ceres Brewery",
+    "img": "https://www.ceres.dk/wp-content/uploads/2015/11/ceres-pilsner.png"
   },
   {
-    "name": "MacBook Pro 13\"",
-    "name_breweries": "Apple",
-    "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp13touch-space-select-201807?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1529520060550"
+    "name": "Tuborg Grøn",
+    "name_breweries": "Carslberg",
+    "img": "https://tuborg.dk/media/1182/hero__0001_groen.png"
   }
 ]
