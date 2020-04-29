@@ -20,12 +20,6 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
-h1 {
-  font-size: 2em;
-  font-weight: 300;
-  letter-spacing: 3px;
-}
-
 /* ---------- topbar styling ---------- */
 .topbar {
   background-color: var(--background-brown);
